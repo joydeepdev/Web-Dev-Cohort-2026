@@ -1,0 +1,1 @@
+This repository contains all my assignments, practice work created during the Web Development Cohort 2026 by Chai Aur Code.
