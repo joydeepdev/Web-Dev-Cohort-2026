@@ -16,11 +16,7 @@ This app fetches inspirational quotes from a public API and displays them inside
 
 ---
 
-## 🖼️ Preview
 
-<img width="1200" alt="Quote Generator Preview" src="https://via.placeholder.com/1200x600.png?text=Quote+Generator+App" />
-
----
 
 ## 🛠️ Tech Stack
 
