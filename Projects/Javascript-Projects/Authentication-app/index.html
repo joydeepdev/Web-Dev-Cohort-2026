@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Authentication App</title>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+
+    <h1>Authentication App</h1>
+
+    <!-- Message Box -->
+    <div id="message" class="message hidden"></div>
+
+    <!-- Tabs -->
+    <div class="tabs">
+      <button id="showLogin" class="active-tab">Login</button>
+      <button id="showRegister">Register</button>
+    </div>
+
+    <!-- Login Form -->
+    <form id="loginForm">
+
+      <input
+        type="text"
+        id="loginUsername"
+        placeholder="Username"
+        required
+      />
+
+      <input
+        type="password"
+        id="loginPassword"
+        placeholder="Password"
+        required
+      />
+
+      <button type="submit" id="loginBtn">
+        Login
+      </button>
+    </form>
+
+    <!-- Register Form -->
+    <form id="registerForm" class="hidden">
+
+      <input
+        type="email"
+        id="registerEmail"
+        placeholder="Email"
+        required
+      />
+
+      <input
+        type="text"
+        id="registerUsername"
+        placeholder="Username"
+        required
+      />
+
+      <input
+        type="password"
+        id="registerPassword"
+        placeholder="Password"
+        required
+      />
+
+      <select id="registerRole">
+        <option value="ADMIN">ADMIN</option>
+        <option value="USER">USER</option>
+      </select>
+
+      <button type="submit" id="registerBtn">
+        Register
+      </button>
+    </form>
+
+    <!-- User Profile -->
+    <div id="profileSection" class="hidden">
+
+      <div class="profile-card">
+        <h2>Current User</h2>
+
+        <p><strong>Username:</strong> <span id="profileUsername"></span></p>
+
+        <p><strong>Email:</strong> <span id="profileEmail"></span></p>
+
+        <p><strong>Role:</strong> <span id="profileRole"></span></p>
+      </div>
+
+      <button id="logoutBtn" class="logout-btn">
+        Logout
+      </button>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
