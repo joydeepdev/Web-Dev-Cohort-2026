@@ -237,7 +237,3 @@ This database design is suitable for an **online fitness coaching ecosystem** wh
 It is not a gym management system.  
 It focuses more on **digital coaching, consultations, progress tracking, and subscription-based services**.
 
----
-
-## ER Diagram
-The ER diagram visually represents all tables, attributes, primary keys, foreign keys, and relationships used in this platform.
