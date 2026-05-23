@@ -29,6 +29,7 @@ function App() {
   useEffect(() => {
     fetchTours();
   }, [fetchTours]);
+
   return (
     <>
       {isLoading && (
