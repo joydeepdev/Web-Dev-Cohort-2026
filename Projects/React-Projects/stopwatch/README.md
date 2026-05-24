@@ -8,6 +8,7 @@ This project demonstrates React Hooks, state management, time handling, conditio
 # Features
 
 ## Stopwatch
+
 - Start stopwatch
 - Pause stopwatch
 - Reset stopwatch
@@ -17,6 +18,7 @@ This project demonstrates React Hooks, state management, time handling, conditio
   - Seconds
 
 ## Timer
+
 - Custom time input
 - Start timer
 - Pause timer
@@ -24,6 +26,7 @@ This project demonstrates React Hooks, state management, time handling, conditio
 - Countdown functionality
 
 ## UI Features
+
 - Responsive design
 - Toggle navigation between Stopwatch and Timer
 - Clean and modern interface
@@ -108,19 +111,10 @@ npm run build
 
 # Screenshots
 
-Add your project screenshots here.
-
-Example:
-
-```md
 ![Stopwatch Screenshot](./screenshots/stopwatch.png)
+
 ![Timer Screenshot](./screenshots/timer.png)
-```
-
-
 
 # Author
 
 Joydeep Banerjee
-
-
