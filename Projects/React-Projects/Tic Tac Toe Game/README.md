@@ -38,33 +38,6 @@ src/
 
 ---
 
-## ⚙️ Installation & Setup
-
-Clone the repository:
-
-```bash
-git clone <your-repository-link>
-```
-
-Navigate to the project folder:
-
-```bash
-cd tic-tac-toe
-```
-
-Install dependencies:
-
-```bash
-npm install
-```
-
-Start the development server:
-
-```bash
-npm run dev
-```
-
----
 
 ## 🎯 Game Rules
 
@@ -104,6 +77,4 @@ npm run dev
 
 ---
 
-## 👨‍💻 Author
-
-Developed using React and CSS.
+live link -https://tic-tac-toe-coral-seven-30.vercel.app/
