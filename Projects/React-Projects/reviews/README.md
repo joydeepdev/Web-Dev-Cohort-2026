@@ -1,16 +1,110 @@
-# React + Vite
+# React Reviews Carousel App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A clean and interactive **Reviews Carousel Application** built with **React.js**.  
+This project allows users to browse through different reviews using previous/next buttons and also display a random review.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Features
 
-## React Compiler
+- Display user reviews dynamically
+- Next & Previous navigation
+- Random review generator
+- Circular review navigation
+- Clean and responsive UI
+- React Icons integration
+- State management using `useState`
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Technologies Used
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React.js
+- JavaScript (ES6+)
+- CSS3
+- React Icons
+
+---
+
+## 📂 Project Structure
+
+```bash
+src/
+│
+├── App.jsx
+├── data.js
+├── index.css
+└── main.jsx
+```
+
+
+---
+
+## 🧠 How It Works
+
+### State Management
+
+The app uses React's `useState` hook to keep track of the currently displayed review.
+
+```js
+const [index, setIndex] = useState(0);
+```
+
+---
+
+### Navigation Logic
+
+The `checkNumber()` function ensures the review index stays within bounds.
+
+```js
+const checkNumber = (number) => {
+  if (number > people.length - 1) return 0;
+  if (number < 0) return people.length - 1;
+  return number;
+};
+```
+
+---
+
+### Random Review
+
+A random review is selected while preventing the same review from appearing consecutively.
+
+```js
+const randomPerson = () => {
+  let randomNumber = Math.floor(Math.random() * people.length);
+
+  if (randomNumber === index) {
+    randomNumber = index + 1;
+  }
+
+  setIndex(checkNumber(randomNumber));
+};
+```
+
+---
+
+## 🎯 Learning Concepts
+
+This project helps in understanding:
+
+- React Components
+- Props & Data Handling
+- Array-based UI rendering
+- Event Handling
+- State Management
+- Conditional Logic
+- Responsive UI Design
+
+---
+
+## 📦 Dependencies
+
+Install React Icons:
+
+```bash
+npm install react-icons
+```
+
+---
+
