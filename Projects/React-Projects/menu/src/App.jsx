@@ -19,7 +19,7 @@ const App = () => {
   };
   return (
     <main>
-      <section>
+      <section className='py-20'>
         <Title text="Our Menu" />
         <Categories categories={categories} filterItems={filterItems} />
         <Menu items={menuItems} />
