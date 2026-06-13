@@ -21,21 +21,23 @@ const App = () => {
 
   if (isLoading) {
     return (
-      <section>
-        <div>Loading.......</div>
+      <section className="mx-auto mt-10 flex justify-center">
+        <div className="h-15 w-15 border-4 rounded-full border-gray-300 border-t-green-500 animate-spin "></div>
       </section>
     );
   }
 
   return (
-    <section>
-      <BtnContainer
-        jobs={jobs}
-        currentItem={currentItem}
-        setCurrentItem={setCurrentItem}
-      />
-      <JobInfo jobs={jobs} currentItem={currentItem} />
-    </section>
+    <div className="bg-gray-50">
+      <section className="mx-auto w-[80vw] max-w-5xl mt-20 lg:grid lg:grid-cols-[250px_1fr] gap-3 ">
+        <BtnContainer
+          jobs={jobs}
+          currentItem={currentItem}
+          setCurrentItem={setCurrentItem}
+        />
+        <JobInfo jobs={jobs} currentItem={currentItem} />
+      </section>
+    </div>
   );
 };
 export default App;

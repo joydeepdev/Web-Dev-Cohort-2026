@@ -6,8 +6,8 @@ const Duties = ({ duties }) => {
       {duties.map((duty) => {
         const id = uuidv4();
         return (
-          <div key={id}>
-            <FaAngleDoubleRight />
+          <div key={id} className="flex gap-4 items-center mb-5 ">
+            <FaAngleDoubleRight className="text-green-500 text-lg  shrink-0" />
             <p>{duty}</p>
           </div>
         );
