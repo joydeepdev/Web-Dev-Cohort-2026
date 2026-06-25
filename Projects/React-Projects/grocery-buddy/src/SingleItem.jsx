@@ -1,15 +1,12 @@
-import { useState } from 'react';
-
-const SingleItem = ({ item, removeItem }) => {
-  const [isChecked, setIsChecked] = useState(item.completed);
+const SingleItem = ({ item, removeItem, editItem }) => {
   return (
     <div className="grid grid-cols-[auto_1fr_auto] items-center gap-x-4">
       <input
         type="checkbox"
         checked={item.completed}
-        onChange={() => setIsChecked(!isChecked)}
+        onChange={() => editItem(item.id)}
       />
-      <p className={`capitalize text-lg ${isChecked && `line-through`}`}>
+      <p className={`capitalize text-lg ${item.completed && `line-through`}`}>
         {item.name}
       </p>
       <button
